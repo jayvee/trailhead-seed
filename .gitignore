@@ -4,3 +4,5 @@ DerivedData/
 .build/
 *.resolved
 .aigon/.board-map.json
+.env.local
+.env*.local

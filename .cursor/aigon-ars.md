@@ -1,8 +1,4 @@
----
-description: Setup research <ID> [agents...] - prepare for Drive or Fleet mode
-argument-hint: "<ID> [agents...]"
----
-# aigon-research-setup
+# aigon-research-start
 
 Prepare to conduct research in either Drive or Fleet mode.
 
@@ -10,10 +6,10 @@ Prepare to conduct research in either Drive or Fleet mode.
 
 ```bash
 # Drive mode (single agent)
-aigon research-setup {{args}}
+aigon research-start <name>
 
 # Fleet mode (multiple agents)
-aigon research-setup {{args}} <agent1> <agent2> [agent3...]
+aigon research-start <name> <agent1> <agent2> [agent3...]
 ```
 
 ## Argument Resolution
@@ -35,7 +31,7 @@ Sets up for a single agent to research the topic.
 
 Example:
 ```bash
-aigon research-setup 05
+aigon research-start 05
 ```
 
 This will:
@@ -43,7 +39,7 @@ This will:
 
 Next steps:
 ```bash
-/aigon:research-do 05     # Conduct the research
+/aigon-research-do 05     # Conduct the research
 ```
 
 ## Fleet Mode
@@ -52,7 +48,7 @@ Sets up for multiple agents to research the same topic in parallel.
 
 Example:
 ```bash
-aigon research-setup 05 cc gg
+aigon research-start 05 cc gg
 ```
 
 This will:
@@ -62,9 +58,9 @@ This will:
   - `logs/research-05-gg-findings.md` (Gemini)
 
 Next steps:
-1. Run `/aigon:research-open 05` to open all agents side-by-side
+1. Run `/aigon-research-open 05` to open all agents side-by-side
 2. Each agent writes to their own findings file
-3. After all agents complete, run `/aigon:research-synthesize 05` to compare and select features
+3. After all agents complete, run `/aigon-research-synthesize 05` to compare and select features
 
 ## Important Notes
 
@@ -78,7 +74,7 @@ Next steps:
 
 End your response with the suggested next command on its own line. This influences Claude Code's prompt suggestion (grey text). Use the actual ID:
 
-- **Drive mode**: `/aigon:research-do <ID>`
-- **Fleet mode**: `/aigon:research-open <ID>`
+- **Drive mode**: `/aigon-research-do <ID>`
+- **Fleet mode**: `/aigon-research-open <ID>`
 
-ARGUMENTS: {{args}}
+ARGUMENTS: <args>

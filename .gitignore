@@ -6,3 +6,7 @@ DerivedData/
 .aigon/.board-map.json
 .env.local
 .env*.local
+.aigon/worktree.json
+.aigon/state/
+.aigon/locks/
+next-env.d.ts

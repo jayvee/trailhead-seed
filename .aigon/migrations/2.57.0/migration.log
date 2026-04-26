@@ -1,0 +1,10 @@
+[2026-04-26T03:11:58.080Z] Starting migration to 2.57.0
+[2026-04-26T03:11:58.080Z] Entities before: features=0, research=0, feedback=0
+[2026-04-26T03:11:58.080Z] Creating backup of .aigon/workflows/
+[2026-04-26T03:11:58.080Z] Backup created successfully
+[2026-04-26T03:11:58.080Z] Running migration function
+[2026-04-26T03:11:58.080Z] No workflows dir; migration 2.57.0 no-op.
+[2026-04-26T03:11:58.080Z] Migration function completed
+[2026-04-26T03:11:58.080Z] Validating state files
+[2026-04-26T03:11:58.080Z] Validation passed
+[2026-04-26T03:11:58.081Z] Migration completed successfully

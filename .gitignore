@@ -4,3 +4,10 @@ DerivedData/
 .build/
 *.resolved
 .aigon/workflows/
+.aigon/.board-map.json
+.aigon/worktree.json
+.aigon/state/
+.aigon/locks/
+next-env.d.ts
+.env.local
+.env*.local
